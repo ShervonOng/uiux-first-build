@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-tv-blue: #1E53E5;
+  --color-gain: #067562;
+  --color-gain-line: #089981;
+  --color-loss: #C91D2C;
+  --color-loss-line: #F23645;
+  --color-promo: #FF3B30;
+  --color-on-promo: #212121;
+
+  --font-display: "Red Hat Text", sans-serif;
+  --font-headline: "Red Hat Text", sans-serif;
+  --font-title: "Instrument Sans", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-label: "Instrument Sans", sans-serif;
+  --font-mono: "Red Hat Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}

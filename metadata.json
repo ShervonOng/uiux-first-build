@@ -1,0 +1,6 @@
+{
+  "name": "Markets, everywhere — TradingView",
+  "description": "Global markets overview featuring interactive index charts, US and world stocks, cryptocurrencies, futures, forex, government bonds, ETFs, and macroeconomic indicators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
